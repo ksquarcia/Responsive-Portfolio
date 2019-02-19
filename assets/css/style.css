@@ -162,3 +162,69 @@ input[type="submit"] {
 input[type="submit"]:hover {
     opacity: .75;
 }
+
+ /* Mobile */
+
+@media screen and (max-width: 980px) {
+   .content,
+   header .container {
+     width: 90%;
+   }
+ 
+
+   .portfolio-item {
+     width: 49%;
+     height: auto;
+     overflow: hidden; 
+   }
+
+   .portfolio .portfolio-item {
+     margin-right: 1%;
+   }
+ 
+   .portfolio .portfolio-item:nth-child(2n) {
+     margin-right: 0;
+   }
+ }
+ 
+ 
+ @media screen and (max-width: 768px) {
+   .name {
+     padding: 20px 26px;
+     font-size: 26px;
+   }
+ }
+ 
+ @media screen and (max-width: 640px) {
+   .name {
+     padding: 16px 20px;
+     font-size: 22px;
+   }
+ 
+   header {
+     border-top: 5px solid black;
+     padding-top: 0;
+   }
+ 
+   .portfolio .portfolio-item {
+     margin-right: 0;
+     width: 100%;
+   }
+ }
+ 
+ @media screen and (max-width: 580px) {
+    header .container {
+       flex-direction: column;
+       width: 100%;
+    }
+ 
+    header nav {
+       padding: 20px;
+    }
+ }
+ 
+ @media screen and (max-width: 360px) {
+    header nav a {
+       padding: 0 10px;
+    }
+ }
